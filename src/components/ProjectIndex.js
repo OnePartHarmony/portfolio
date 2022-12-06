@@ -7,9 +7,11 @@ const ProjectIndex = () => {
     const projectsJSX = currentProjects.map((project, index) => {
         return(
             <Link to={`/projects/${index}`} className="indexProject" key={index}>
-                <div>
+                {/* <div> */}
                     <img src={project.indexImage} alt={project.title}/>
-                </div>                
+                                                           
+                {/* </div> */}
+                <div className="cover"><h1>{project.title}</h1> </div>
             </Link>
 
         )        

@@ -1,8 +1,21 @@
 import React from "react"
+import myFace from "../images/Harms-no-background.png"
 
 const AboutMe = () => {
     return (
-        <>About Me</>
+        <div className="about">
+            <header>
+                <section>
+                    <br/>
+                    <h1>Harmony Brown</h1>
+                    <h3>Software Engineer<br/>Full-Stack Developer</h3>
+                </section>
+                <img src={myFace} alt="Harmony's Face" className="myFace" />
+            </header>
+            <hr/>
+            
+            {/* <section>Contact Me</section> */}
+        </div>
     )
 }
 

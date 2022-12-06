@@ -1,7 +1,7 @@
 import ruleOf3 from "./images/RuleOf3.png"
 import setList from "./images/SetList.png"
 import gitInput from "./images/GitInput.png"
-import baraka from "./images/Baraka2.png"
+import baraka from "./images/Baraka.png"
 
 
 const currentProjects = [

@@ -9,9 +9,9 @@ const Navigation = (props) => {
             <Navbar.Toggle aria-controls='basic-navbar-nav' className='me-4'/>
             <Navbar.Collapse>
                 <Nav className="me-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="about">About Me</Nav.Link>
-                    <Nav.Link href="projects">Projects</Nav.Link>
+                    <Nav.Link href="/">About Me</Nav.Link>
+                    <Nav.Link href="/projects">Projects</Nav.Link>
+                    <Nav.Link href="/personal">Personal</Nav.Link>                    
                 </Nav>
             </Navbar.Collapse>            
       </Navbar>
