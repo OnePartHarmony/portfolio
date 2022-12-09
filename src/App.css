@@ -58,7 +58,7 @@ body {
     align-items: center;
 }
 
-.about header {
+header {
     background-color: #606c38;
     width: 100vw;
     height: max-content;
@@ -70,11 +70,11 @@ body {
     text-shadow: 2px 2px rgb(41, 21, 18);
 }
 
-.about h1 {
+header h1 {
     font-size: 6vw;    
 }
 
-.about h3 {
+header h3 {
     font-size: 3vw;     
 }
 
