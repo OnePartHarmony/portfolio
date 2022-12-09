@@ -1,10 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+
 body {
-    background-color: rgb(49, 31, 24);
-    color: ivory;
+    background-color: #283618;
+    color: #fefae0;
+    font-family: 'Neucha', cursive;
 }
 
 .navigation {
-    background-color: rgb(41, 21, 18);
+    color: #fefae0;
+    background-color: #606c38;
+    padding: 0;
+}
+
+.brand {
+    color: #fefae0;
+    font-size: 3vw;
+    color: #bc6c25;
+    text-shadow: 1px 0px rgb(41, 21, 18);
+    font-family: 'Mountains of Christmas', cursive;
+    margin: -1vw;
+}
+
+.brand:hover {
+    color: rgb(41, 21, 18);
+}
+
+.navLink {
+    color: #fefae0;
+    font-size: 2vw;
+}
+
+.navLink:hover {
+    color: #283618;
+}
+
+.navbar-toggler {
+    border: none;
+    height: 3vw;
+    width: 3vw;
+    min-height: 32px;
+    min-width: 35px;
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    height: 2vw;
+    width: 2vw;
+    min-height: 30px;
+    min-width: 30px;
+    background-image: url(./images/burgerMenu.png);
 }
 
 .about {
@@ -14,15 +59,19 @@ body {
 }
 
 .about header {
-    background-color: olivedrab;
+    background-color: #606c38;
     width: 100vw;
+    height: max-content;
     display: flex;
     justify-content: space-between;
-    padding: 1vw 20vw 0 20vw;
+    align-items: center;
+    padding: 1vw 18vw 0 18vw;
+    border-bottom: 4px solid rgb(41, 21, 18);
+    text-shadow: 2px 2px rgb(41, 21, 18);
 }
 
 .about h1 {
-    font-size: 5vw;    
+    font-size: 6vw;    
 }
 
 .about h3 {
@@ -32,14 +81,6 @@ body {
 .myFace {
     height: 20vw;
     width: 20vw;
-}
-
-.about hr {
-    color:rgb(41, 21, 18);
-    border: 2px solid rgb(41, 21, 18);
-    opacity: 1;
-    width: 80vw;
-    margin-top: 0;
 }
 
 .projectIndexContainer {
@@ -66,8 +107,8 @@ body {
 }
 
 .indexProject:hover {
-    color: ivory;
-    text-shadow: 3px 3px 4px olivedrab;
+    color: #fefae0;
+    text-shadow: 3px 3px 2px #606c38;
 }
 
 .indexProject h1 {
@@ -86,11 +127,21 @@ body {
     top: 20px;
     left: 10px;
     border-radius: 10px;
-    border: 3px solid olivedrab;
+    border: 3px solid #bc6c25;
 }
 
 .cover:hover {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.6);
+}
+
+
+@media (max-width: 1300px) {
+    .brand {
+        font-size: 4vw;
+    }
+    .navLink {
+        font-size: 2.4vw;
+    }
 }
 
 @media (max-width: 900px) {
@@ -103,5 +154,20 @@ body {
         height: calc(100% - 10px);
         top: 5px;
         left: 8px;
+    }
+    .brand {
+        font-size: 5vw;
+    }
+    .navLink {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .brand {
+        font-size: 7vw;
+    }
+    .navLink {
+        font-size: 4vw;
     }
 }

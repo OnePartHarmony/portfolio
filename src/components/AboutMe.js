@@ -6,14 +6,12 @@ const AboutMe = () => {
         <div className="about">
             <header>
                 <section>
-                    <br/>
+                    {/* <br/> */}
                     <h1>Harmony Brown</h1>
                     <h3>Software Engineer<br/>Full-Stack Developer</h3>
                 </section>
                 <img src={myFace} alt="Harmony's Face" className="myFace" />
-            </header>
-            <hr/>
-            
+            </header>                   
             {/* <section>Contact Me</section> */}
         </div>
     )
