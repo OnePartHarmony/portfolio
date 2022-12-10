@@ -134,6 +134,19 @@ header h3 {
     background-color: rgba(0,0,0,.6);
 }
 
+button {
+    border-radius: 10px;
+    background: linear-gradient(#bc6c25, rgb(41, 21, 18));
+    color: #fefae0;
+    border: none;
+    padding: 5px 8px;
+    box-shadow: 1px 1px 2px rgb(41, 21, 18);
+}
+
+button:hover {
+    background: linear-gradient(rgb(41, 21, 18), #bc6c25);
+}
+
 
 @media (max-width: 1300px) {
     .brand {

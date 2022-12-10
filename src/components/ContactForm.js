@@ -18,11 +18,11 @@ const ContactForm = () => {
     return (
         <div className="contactForm">
             <form ref={form} onSubmit={sendMessage}>                
-                <label htmlFor="user_name">Name:</label>
+                <label htmlFor="user_name" className="me-3">Name:</label>
                 <input type="text" name="user_name" id="user_name" placeholder="your full name"/><br/>
-                <label htmlFor="address">Email:</label>
+                <label htmlFor="address" className="me-3">Email:</label>
                 <input type="text" name="address" id="address" placeholder="your email address"/><br/>
-                <label htmlFor="message">message</label>
+                <label htmlFor="message" className="me-3">Message:</label>
                 <textarea rows="4" name="message" id="message" placeholder="what would you like to tell me?"/><br/>
                 <button type="submit">Send Email</button>
             </form>
