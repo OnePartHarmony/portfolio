@@ -1,34 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
 
 body {
-    background-color: #283618;
+    background-color: #292919;
     color: #fefae0;
     font-family: 'Neucha', cursive;
+    /* font-family: 'Quicksand', sans-serif; */
 }
 
 .navigation {
-    color: #fefae0;
-    background-color: #606c38;
+    background-color: #3c4323;
     padding: 0;
 }
 
 .brand {
-    color: #fefae0;
     font-size: 3vw;
     color: #bc6c25;
-    text-shadow: 1px 0px rgb(41, 21, 18);
+    text-shadow: 1px 0px #291512;
     font-family: 'Mountains of Christmas', cursive;
     margin: -1vw;
 }
 
 .brand:hover {
-    color: rgb(41, 21, 18);
+    color: #291512;
 }
 
 .navLink {
     color: #fefae0;
     font-size: 2vw;
+}
+
+.linkedIn {
+    height: 8vw;
+    margin: -1.7vw 0;
+    font-size: 0; 
+}
+
+.gitIcon {
+    height: 3.8vw;
+    margin: .4vw 0;
+    font-size: 0; 
+}
+
+svg:hover .svgHover {
+    fill: #283618;
+}
+
+svg:hover .svgHoverLt {
+    fill: #fefae0;
 }
 
 .navLink:hover {
@@ -64,15 +84,15 @@ body {
 }
 
 header {
-    background-color: #606c38;
+    background: linear-gradient(#3c4323, #606c38);
     width: 100vw;
     height: max-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1vw 18vw 0 18vw;
-    border-bottom: 4px solid rgb(41, 21, 18);
-    text-shadow: 2px 2px rgb(41, 21, 18);
+    border-bottom: 4px solid #291512;
+    text-shadow: 2px 2px #291512;
 }
 
 header h1 {
@@ -89,7 +109,7 @@ header h3 {
 }
 
 .projectIndexContainer {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -107,7 +127,7 @@ header h3 {
 
 .indexProject img {
     width: 100%;
-    border: 4px solid rgb(41, 21, 18);
+    border: 4px solid #291512;
     border-radius: 10px;
 }
 
@@ -125,6 +145,54 @@ header h3 {
     text-align: center;
 }
 
+.homeProjects, .contactForm {
+    border-radius: 10px;
+    margin: 5vw auto;
+    border: 4px solid #291512;
+}
+
+.homeProjects {
+    background-color: #606c38;
+    text-align: center;
+
+    width: 90vw;
+    padding: 1vw;
+}
+
+.homeProjects h2 {    
+    text-shadow: 1px 1px #291512;
+    font-size: 3.5vw;
+}
+
+.sectionWrap {
+    border-radius: 10px;
+    background-color: #291512;
+    height: 35.5vw;
+    padding: .25vw;
+}
+
+.homeProjects section {
+    height: 35vw;
+    overflow-y: auto;
+    background-color: #2b1f13;
+    padding: 0 1vw 1vw 1vw;
+    border-radius: 5px;
+    border: 4px #291512;
+    scrollbar-color: #9f5b20 #291512;
+    scrollbar-width: thin;
+}
+
+.homeProjects section::-webkit-scrollbar {
+    background-color: #291512;
+    width: 1vw;
+    border-radius: 10px;
+}
+
+.homeProjects section::-webkit-scrollbar-thumb {
+    background: linear-gradient(#9f5b20, #3f211c);
+    border-radius: 10px;
+}
+
 .cover {
     width: calc(100% - 20px);
     height: calc(100% - 20px);
@@ -139,16 +207,10 @@ header h3 {
     background-color: rgba(0,0,0,.6);
 }
 
-
-.contactForm {
-    border: 4px solid rgb(41, 21, 18);
+.contactForm { 
     width: max-content;
-    margin: auto;
     background-color: rgba(188,108,37,.7);
-    border-radius: 10px;
-    margin-top: 5vw;
-    color: #fefae0;      
-    text-shadow: 1px 1px rgb(41, 21, 18);    
+    text-shadow: 1px 1px #291512;   
 }
 
 .contactForm h2 {
@@ -169,12 +231,12 @@ header h3 {
     padding: .7vw;
     border-radius: 5px;
     background: #dda15e;
-    box-shadow: inset 1px 1px 2px rgb(41, 21, 18);
+    box-shadow: inset 1px 1px 2px #291512;
     font-size: 2vw;
 }
 
 .contactForm input:focus, textarea:focus {
-    outline: 2px solid rgb(41, 21, 18);
+    outline: 2px solid #291512;
 }
 
 ::placeholder {
@@ -188,7 +250,7 @@ header h3 {
 }
 
 .contactForm span {
-    color:rgb(41, 21, 18);
+    color:#291512;
     text-shadow: none;
 }
 
@@ -198,20 +260,23 @@ header h3 {
 
 .contactForm button {
     border-radius: 10px;
-    background: linear-gradient(#bc6c25, rgb(41, 21, 18));
+    background: linear-gradient(#bc6c25, #291512);
     color: #fefae0;
     border: none;
     padding: .3vw .8vw 0 .8vw;
-    box-shadow: 2px 1px 2px rgb(41, 21, 18);
+    box-shadow: 2px 1px 2px #291512;
     font-size: 2.5vw;
-    text-shadow: 1px 1px rgb(41, 21, 18);
+    text-shadow: 1px 1px #291512;
     margin-bottom: 1vw;
 }
 
 .contactForm button:hover {
-    background: linear-gradient(rgb(41, 21, 18), #bc6c25);
+    background: linear-gradient(#291512, #bc6c25);
 }
 
+footer {
+    text-align: center;
+}
 
 @media (max-width: 1300px) {
     .brand {
@@ -239,6 +304,13 @@ header h3 {
     .navLink {
         font-size: 3vw;
     }
+    .linkedIn  {
+        height: 10vw;
+        margin: -1.9vw 0;
+    }
+    .homeProjects section {
+        height: 55vw;
+    }
 }
 
 @media (max-width: 700px) {
@@ -247,6 +319,10 @@ header h3 {
     }
     .navLink {
         font-size: 4vw;
+    }
+    .linkedIn  {
+        height: 15vw;
+        margin: -3.5vw 0;
     }
     .inputs {
         min-height: 60vw;
