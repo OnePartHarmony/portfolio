@@ -11,7 +11,7 @@ const Navigation = (props) => {
             <Navbar.Collapse className="ms-3" style={{fontSize: "100px"}}>
                 <Nav className="ms-auto">
                     <Nav.Link eventKey="1" as={Link} to="/projects" className="me-3 navLink">Projects</Nav.Link>
-                    <Nav.Link eventKey="2" as={Link} to="/aboutHarmony" className="me-3 navLink">About</Nav.Link>
+                    <Nav.Link eventKey="2" as={Link} to="/aboutHarmony" className="me-3 navLink">Personal</Nav.Link>
                     <Nav.Link onClick={() => {window.open("/hbResume.pdf", "_blank")}}  className="me-3 navLink" download>Resume</Nav.Link>                       
                     <a className="gitIcon me-4" target="_blank" rel="noreferrer" href="https://github.com/OnePartHarmony">
                         <svg style={{height: "100%"}} viewBox="0 0 128 128">

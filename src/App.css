@@ -83,7 +83,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5vw 16vw 0 17vw;
+    padding: 1.5vw 19vw 0 19vw;
     border-bottom: 4px solid #291512;
     text-shadow: 2px 2px #291512;
 }
@@ -158,7 +158,7 @@ header h3 {
     text-align: center;
 }
 
-.homeProjects, .contactForm, .homeAbout {
+.homeProjects, .contactForm, .homeAbout, .professional, .musical, .weird {
     border-radius: 10px;
     margin: 3vw auto;
     border: 4px solid #291512;
@@ -171,6 +171,8 @@ header h3 {
     color: #291512;
     padding: 1.5vw 4vw;
     font-size: 2.3vw;
+    word-spacing: .4vw;
+    line-height: 3.6vw;
 }
 
 .homeAbout h2 {
@@ -296,6 +298,40 @@ header h3 {
 
 .contactForm button:hover {
     background: linear-gradient(#291512, #bc6c25);
+}
+
+.professional {
+    display: flex;
+    height: 24vw;
+    font-size: 2vw;
+    word-spacing: .4vw;
+    line-height: 3.4vw;
+    color: #291512;
+    background-color: #92a162;
+}
+
+.professional img, .weird img {
+    border-radius: 10px;
+}
+
+.professional, .professional p, .musical, .weird {
+    padding: 1vw;
+}
+
+.musical {
+    background-color:#9f5b20;
+}
+
+.weird {
+    display: flex;
+    height: 20vw;
+    background-color: #92a162;    
+}
+
+iframe {
+    border-radius: 10px;
+    height: 22vw;
+    width: 39.1vw;
 }
 
 footer {

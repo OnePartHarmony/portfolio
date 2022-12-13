@@ -1,11 +1,14 @@
 import React from "react"
 import myFace from "../images/Harms-no-background.png"
 
-const Header = () => {
+const Header = ({clown}) => {
+    const clownImg = clown ? (<img src={clown} alt="Harmony as a Clown" className="myFace" />) : (<></>)
+    const headerStyle = clown ? {padding: "1.5vw 10vw 0 10vw"} : {}
 
     return (
         <section className="aboutHeading">
-            <header>
+            <header style={headerStyle}>
+                {clownImg}
                 <section>
                     <h1>Harmony Brown</h1>
                     <h3>Software Engineer<br/>Full-Stack Developer</h3>
