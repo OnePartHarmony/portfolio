@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.a77f50bb.css",
+    "main.js": "/portfolio/static/js/main.919e649a.js",
+    "static/media/SetList.png": "/portfolio/static/media/SetList.8dc3ca8707d03e0cfabc.png",
+    "static/media/Baraka.png": "/portfolio/static/media/Baraka.257332fdc09bf241cdc7.png",
+    "static/media/Clown.png": "/portfolio/static/media/Clown.08cc7b82094bbfdb85a5.png",
+    "static/media/GitInput.png": "/portfolio/static/media/GitInput.573d1a89c4ff40e284f0.png",
+    "static/media/gordita.jpg": "/portfolio/static/media/gordita.18486dc4d0e3108f3c17.jpg",
+    "static/media/RuleOf3.png": "/portfolio/static/media/RuleOf3.109cb87a05fda7effe4b.png",
+    "static/media/Harms-no-background.png": "/portfolio/static/media/Harms-no-background.77206e354c7bd2661a00.png",
+    "static/media/BakingH.jpg": "/portfolio/static/media/BakingH.16d5af5586b8b39696ea.jpg",
+    "static/media/foxCookies.JPG": "/portfolio/static/media/foxCookies.1ef836d142c13c853560.JPG",
+    "static/media/SantaH.jpg": "/portfolio/static/media/SantaH.8a67172aab07b40f1df1.jpg",
+    "static/media/Weird-H.jpg": "/portfolio/static/media/Weird-H.0ca56e97ba06acae673f.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.a77f50bb.css.map": "/portfolio/static/css/main.a77f50bb.css.map",
+    "main.919e649a.js.map": "/portfolio/static/js/main.919e649a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a77f50bb.css",
+    "static/js/main.919e649a.js"
+  ]
+}
