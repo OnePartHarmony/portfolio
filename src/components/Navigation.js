@@ -3,10 +3,10 @@ import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import { Link } from "react-router-dom"
 
-const Navigation = (props) => {
+const Navigation = () => {
     return (
         <Navbar collapseOnSelect={true} className="navigation" expand="sm">            
-            <Navbar.Brand href="/" className="ms-3 brand">HB</Navbar.Brand>
+            <Navbar.Brand href="/portfolio" className="ms-3 brand">HB</Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' className='me-3'/>
             <Navbar.Collapse className="ms-3" style={{fontSize: "100px"}}>
                 <Nav className="ms-auto">
