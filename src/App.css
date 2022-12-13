@@ -38,13 +38,13 @@ body {
 }
 
 .gitIcon {
-    height: 3.8vw;
+    height: 3.5vw;
     margin: .4vw 0;
     font-size: 0; 
 }
 
 svg:hover .svgHover {
-    fill: #283618;
+    fill: #292919;
 }
 
 svg:hover .svgHoverLt {
@@ -52,7 +52,7 @@ svg:hover .svgHoverLt {
 }
 
 .navLink:hover {
-    color: #283618;
+    color: #292919;
 }
 
 .navbar-toggler {
@@ -106,6 +106,26 @@ header h3 {
 .myFace {
     height: 20vw;
     width: 20vw;
+}
+
+.skillBar {
+    width: max-content;
+    margin: auto;
+}
+
+.skillIcon {
+    height: 4vw;
+    margin: 1vw;
+}
+
+.skillIconMd {
+    height: 5vw;
+    margin: 1vw;
+}
+
+.skillIconSm {
+    height: 7vw;
+    margin: 0 1vw;
 }
 
 .projectIndexContainer {
@@ -308,6 +328,10 @@ footer {
         height: 10vw;
         margin: -1.9vw 0;
     }
+    .gitIcon {
+        height: 4vw;
+        margin: .7vw 0;
+    }
     .homeProjects section {
         height: 55vw;
     }
@@ -323,6 +347,10 @@ footer {
     .linkedIn  {
         height: 15vw;
         margin: -3.5vw 0;
+    }
+    .gitIcon {
+        height: 5.2vw;
+        margin: 1vw 0;
     }
     .inputs {
         min-height: 60vw;
