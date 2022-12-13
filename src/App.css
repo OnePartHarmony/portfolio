@@ -77,20 +77,13 @@ svg:hover .svgHoverLt {
     box-shadow: none;
 }
 
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 header {
     background: linear-gradient(#3c4323, #606c38);
-    width: 100vw;
     height: max-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 18vw 0 18vw;
+    padding: 1.5vw 16vw 0 17vw;
     border-bottom: 4px solid #291512;
     text-shadow: 2px 2px #291512;
 }
@@ -165,18 +158,29 @@ header h3 {
     text-align: center;
 }
 
-.homeProjects, .contactForm {
+.homeProjects, .contactForm, .homeAbout {
     border-radius: 10px;
-    margin: 5vw auto;
+    margin: 3vw auto;
     border: 4px solid #291512;
+    width: 95vw;    
+}
+
+.homeAbout {
+    background: #dda15e;
+    text-align: center;
+    color: #291512;
+    padding: 1.5vw 4vw;
+    font-size: 2.3vw;
+}
+
+.homeAbout h2 {
+    font-size: 3vw;
 }
 
 .homeProjects {
     background-color: #606c38;
     text-align: center;
-
-    width: 90vw;
-    padding: 1vw;
+    padding: 2vw;
 }
 
 .homeProjects h2 {    
@@ -228,9 +232,9 @@ header h3 {
 }
 
 .contactForm { 
-    width: max-content;
     background-color: rgba(188,108,37,.7);
-    text-shadow: 1px 1px #291512;   
+    text-shadow: 1px 1px #291512;
+    padding: 1vw 0;
 }
 
 .contactForm h2 {
@@ -242,7 +246,7 @@ header h3 {
 .inputs {
     display: flex;
     justify-content: space-evenly;
-    width: 90vw;
+    width: 100%;
 }
 
 .contactForm input, textarea {
@@ -251,7 +255,7 @@ header h3 {
     padding: .7vw;
     border-radius: 5px;
     background: #dda15e;
-    box-shadow: inset 1px 1px 2px #291512;
+    box-shadow: inset 2px 2px 4px #291512;
     font-size: 2vw;
 }
 
@@ -331,6 +335,9 @@ footer {
     .gitIcon {
         height: 4vw;
         margin: .7vw 0;
+    }
+    .sectionWrap {
+        height: 55.5vw;
     }
     .homeProjects section {
         height: 55vw;
