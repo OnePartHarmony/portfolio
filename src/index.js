@@ -16,10 +16,10 @@ root.render(
     <div className="App">
       <Navigation />
       <Routes>
-        <Route path='/aboutHarmony' element={<AboutMe />} />
-        <Route path='/' element={<Home />} />
-        <Route path='/projects' element={<ProjectIndex />} />
-        <Route path='/projects/:id' element={<ProjectShow />} />
+        <Route path='/portfolio/aboutHarmony' element={<AboutMe />} />
+        <Route path='/portfolio' element={<Home />} />
+        <Route path='/portfolio/projects' element={<ProjectIndex />} />
+        <Route path='/portfolio/projects/:id' element={<ProjectShow />} />
       </Routes>
     </div>
   </BrowserRouter>
