@@ -89,7 +89,15 @@ header {
 }
 
 header h1 {
-    font-size: 6vw;    
+    font-size: 6vw;
+}
+
+header h2 {
+    font-size: 3vw;
+    text-shadow: none;
+    color: #291512;
+    text-align: right;
+    margin: -2vw -3vw -1vw 0;
 }
 
 header h3 {
@@ -191,7 +199,7 @@ header h3 {
 }
 
 .sectionWrap {
-    border-radius: 10px;
+    border-radius: 1vw;
     background-color: #291512;
     height: 35.5vw;
     padding: .25vw;
@@ -202,7 +210,7 @@ header h3 {
     overflow-y: auto;
     background-color: #2b1f13;
     padding: 0 1vw 1vw 1vw;
-    border-radius: 5px;
+    border-radius: .5vw;
     border: 4px #291512;
     scrollbar-color: #9f5b20 #291512;
     scrollbar-width: thin;
@@ -233,10 +241,11 @@ header h3 {
     background-color: rgba(0,0,0,.6);
 }
 
-.contactForm { 
+.contactForm {
     background-color: rgba(188,108,37,.7);
     text-shadow: 1px 1px #291512;
     padding: 1vw 0;
+    height: 37vw;
 }
 
 .contactForm h2 {
@@ -285,7 +294,7 @@ header h3 {
 }
 
 .contactForm button {
-    border-radius: 10px;
+    border-radius: 1vw;
     background: linear-gradient(#bc6c25, #291512);
     color: #fefae0;
     border: none;
@@ -298,6 +307,18 @@ header h3 {
 
 .contactForm button:hover {
     background: linear-gradient(#291512, #bc6c25);
+}
+
+.emailResponse {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.emailResponse p {
+    text-align: center;
+    font-size: 5vw;
+    margin: auto;
 }
 
 .professional, .professional p, .musical, .musical p, .weird, .weird p, .baking, .baking p {
@@ -315,13 +336,13 @@ header h3 {
     margin: auto;
 }
 
-.professional {
-    height: 24vw;
-    background-color: #92a162;
+.professional img, .weird img, .baking img {
+    border-radius: 1vw;
 }
 
-.professional img, .weird img, .baking img {
-    border-radius: 10px;
+.professional {
+    height: 28vw;
+    background-color: #92a162;
 }
 
 .baking {
@@ -342,10 +363,28 @@ iframe {
     border-radius: 10px;
     height: 22vw;
     width: 39.1vw;
+    margin: auto;
 }
 
 .musical p {
     width: 50vw;
+}
+
+.projectShow {
+    display: flex;
+    padding: 0 5vw 2vw 5vw;
+}
+
+.projectShow img, .projectShow video, .projectLeft {
+    width: 45vw;
+}
+
+.projectLeft {
+    padding: 0 4vw;
+}
+
+.projectShow p {
+    font-size: 2vw;
 }
 
 footer {
@@ -392,6 +431,17 @@ footer {
     .homeProjects section {
         height: 55vw;
     }
+    .professional, .professional p, .musical, .musical p, .weird, .weird p, .baking, .baking p {
+        font-size: 2.8vw;
+        word-spacing: .4vw;
+        line-height: 4vw;
+    }
+    .professional {
+        height: 48vw;
+    }
+    .baking {
+        height: 32vw;
+    }
 }
 
 @media (max-width: 700px) {
@@ -409,6 +459,23 @@ footer {
         height: 5.2vw;
         margin: 1vw 0;
     }
+    .skillIcon {
+        height: 6vw;
+    }    
+    .skillIconMd {
+        height: 7.5vw;
+    }    
+    .skillIconSm {
+        height: 10.5vw;
+    }
+    .homeAbout {
+        font-size: 3.4vw;
+        word-spacing: .8vw;
+        line-height: 4.4vw;
+    }
+    .homeAbout h2 {
+        font-size: 4vw;
+    }
     .inputs {
         min-height: 60vw;
         flex-direction: column;
@@ -416,13 +483,52 @@ footer {
         width: 80vw;
         margin: 0 5vw;
     }
+    .contactForm {
+        height: 70vw;
+    }
+    .contactForm h2 {
+        font-size: 4vw;
+    }
     .contactForm input, textarea {
         width: 80vw;
     }
     .contactForm label, button {
-        font-size: 3vw;
+        font-size: 3.4vw;
     }
     .contactForm input, textarea {
-        font-size: 2.5vw;
+        font-size: 3vw;
+    }
+    .professional, .professional p, .musical, .musical p, .weird, .weird p, .baking, .baking p {
+        font-size: 3.4vw;
+        word-spacing: .5vw;
+        line-height: 5vw;
+    }
+    .professional {
+        height: 75vw;
+    }
+    .professional img {
+        height: 47vw;
+        margin: auto;
+    }
+    .musical {
+        flex-direction: column;
+    }
+    .musical p {
+        width: 80vw;
+    }
+    iframe {
+        height: 33vw;
+        width: 58.65vw;
+    }
+    .baking {
+        height: 50vw;
+    }
+    .baking img {
+        height: 30vw;
+        margin: auto;
+        aspect-ratio: initial;
+    }
+    .weird {
+        height: 40vw;
     }
 }
