@@ -30,7 +30,7 @@ const ContactForm = () => {
 
     const fullForm = (
         <form ref={form} onSubmit={sendMessage}>
-            <h2>Contact Me -><span> harmonyluisebrown@gmail.com</span></h2>
+            <h2>Contact Me {"\u2794"}<span> harmonyluisebrown@gmail.com</span></h2>
             <section className="inputs">
                 <div>
                     <label htmlFor="user_name" className="me-3">Name:</label><br/>
