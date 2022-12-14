@@ -93,11 +93,11 @@ header h1 {
 }
 
 header h2 {
-    font-size: 3vw;
-    text-shadow: none;
-    color: #291512;
+    font-size: 2vw;
+    color: #fefae0;
+    text-shadow: .1vw .2vw #291512;
     text-align: right;
-    margin: -2vw -3vw -1vw 0;
+    margin: -2vw -2.4vw -1vw 0;
 }
 
 header h3 {
@@ -264,7 +264,7 @@ header h3 {
     width: 40vw;
     border: none;
     padding: .7vw;
-    border-radius: 5px;
+    border-radius: .5vw;
     background: #dda15e;
     box-shadow: inset 2px 2px 4px #291512;
     font-size: 2vw;
@@ -293,6 +293,10 @@ header h3 {
     font-size: 2.5vw; 
 }
 
+.emailLabel {
+    margin-top: 2vw;
+}
+
 .contactForm button {
     border-radius: 1vw;
     background: linear-gradient(#bc6c25, #291512);
@@ -302,7 +306,7 @@ header h3 {
     box-shadow: 2px 1px 2px #291512;
     font-size: 2.5vw;
     text-shadow: 1px 1px #291512;
-    margin-bottom: 1vw;
+    margin: 1vw 0;
 }
 
 .contactForm button:hover {
@@ -350,12 +354,17 @@ header h3 {
     height: 24vw;
 }
 
+.gordita {
+    height: 18vw;
+    margin: auto;
+}
+
 .musical {
     background-color: #92a162;     
 }
 
 .weird {
-    height: 20vw;
+    height: 30vw;
     background-color:#9f5b20;
 }
 
@@ -425,6 +434,9 @@ footer {
         height: 4vw;
         margin: .7vw 0;
     }
+    header h2 {
+        font-size: 2.5vw;
+    }
     .sectionWrap {
         height: 55.5vw;
     }
@@ -477,23 +489,28 @@ footer {
         font-size: 4vw;
     }
     .inputs {
-        min-height: 60vw;
+        height: 60vw;
         flex-direction: column;
         align-content: center;
         width: 80vw;
         margin: 0 5vw;
     }
     .contactForm {
-        height: 70vw;
-    }
+        height: 73vw;
+    }    
     .contactForm h2 {
         font-size: 4vw;
     }
     .contactForm input, textarea {
         width: 80vw;
     }
-    .contactForm label, button {
+    .contactForm label {
         font-size: 3.4vw;
+    }
+    .contactForm button {
+        font-size: 3.8vw;
+        margin: 0;
+        padding: .7vw 1vw 0 1vw;
     }
     .contactForm input, textarea {
         font-size: 3vw;
@@ -524,9 +541,13 @@ footer {
         height: 50vw;
     }
     .baking img {
-        height: 30vw;
         margin: auto;
-        aspect-ratio: initial;
+    }
+    .gordita {
+        height: 25vw;
+    }
+    .foxes {
+        height: 35vw;
     }
     .weird {
         height: 40vw;
