@@ -6,6 +6,7 @@ import win from "./images/WinScreen.mp4"
 import lose from "./images/LoseScreen.mp4"
 
 
+
 const currentProjects = [
     {
         title: "Rule of 3",

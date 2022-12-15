@@ -15,9 +15,9 @@ const ProjectShow = () => {
     ))
 
     const videos = project.videos.map((item,index) => (
-        <video key={index} autoplay muted>
+        <video key={index} muted="true" playsInline="true" controls autoplay="true" loop="true">
             <source src={item} type="video/mp4"/>
-            Your browser does not support the video tag.
+            Your browser does not support this video.
         </video>
     ))
 
