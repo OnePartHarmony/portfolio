@@ -18,7 +18,6 @@ const ProjectIndex = () => {
             <div className="projectIndexContainer">
                 {projectsJSX}
             </div>
-            <footer>Harmony Luise Brown 2022</footer>
         </>
     )
 }

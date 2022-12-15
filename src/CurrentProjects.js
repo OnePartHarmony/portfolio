@@ -4,6 +4,7 @@ import gitInput from "./images/GitInput.png"
 import baraka from "./images/Baraka.png"
 import win from "./images/WinScreen.mp4"
 import lose from "./images/LoseScreen.mp4"
+import midGame from "./images/midGame.mp4"
 
 
 
@@ -16,7 +17,7 @@ const currentProjects = [
             "Based on the card game Set",
             ""
         ],
-        videos: [win, lose],
+        videos: [win, midGame, lose],
         images: []
     },
     {

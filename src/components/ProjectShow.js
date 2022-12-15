@@ -35,7 +35,6 @@ const ProjectShow = () => {
                     {videos}
                 </section>
             </div>
-            <footer>Harmony Luise Brown 2022</footer>
         </>
     )
 }

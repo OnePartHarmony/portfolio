@@ -21,7 +21,6 @@ const Home = () => {
                 </div>
             </div>            
             <ContactForm />
-            <footer>Harmony Luise Brown 2022</footer>
         </div>
     )
 }

@@ -32,7 +32,7 @@ const AboutMe = () => {
                     <img src={weird2} alt="Harmony as Weird Al" />
                 </section>
             </div>
-            <footer>Harmony Luise Brown 2022</footer>
+
         </>
     )
 }

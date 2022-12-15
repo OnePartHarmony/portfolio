@@ -398,6 +398,7 @@ iframe {
 
 footer {
     text-align: center;
+    font-size: 2vw;
 }
 
 @media (max-width: 1300px) {
@@ -454,6 +455,9 @@ footer {
     .baking {
         height: 32vw;
     }
+    footer {
+        font-size: 3vw;
+    }
 }
 
 @media (max-width: 700px) {
@@ -493,7 +497,7 @@ footer {
         flex-direction: column;
         align-content: center;
         width: 80vw;
-        margin: 0 5vw;
+        margin: auto;
     }
     .contactForm {
         height: 73vw;
@@ -551,5 +555,17 @@ footer {
     }
     .weird {
         height: 40vw;
+    }
+}
+
+@media (max-width: 330px) {
+    .professional {
+        height: 85vw;
+    }
+    .contactForm {
+        height: 100vw;
+    }
+    .inputs {
+        height: 80vw;
     }
 }
