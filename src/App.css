@@ -14,12 +14,17 @@ body {
     padding: 0;
 }
 
+.navbar {
+    --bs-navbar-active-color: #291512;
+}
+
 .brand {
     font-size: 3vw;
     color: #bc6c25;
     text-shadow: 1px 0px #291512;
     font-family: 'Mountains of Christmas', cursive;
     margin: -1vw;
+    transition: color .15s ease-in-out;
 }
 
 .brand:hover {
@@ -31,10 +36,25 @@ body {
     font-size: 2vw;
 }
 
+.resumeIcon {
+    fill: #fefae0;
+    height: 2vw;
+    width: 2vw;
+    transition: fill .15s ease-in-out;
+}
+
+.navLink:hover {
+    color: #291512;
+}
+
+.navLink:hover .resumeIcon{
+    fill: #291512;
+}
+
 .linkedIn {
     height: 8vw;
     margin: -1.7vw 0;
-    font-size: 0; 
+    font-size: 0;
 }
 
 .gitIcon {
@@ -43,16 +63,16 @@ body {
     font-size: 0; 
 }
 
-svg:hover .svgHover {
-    fill: #292919;
+.svgHover, .svgHoverLt {
+    transition: fill .15s ease-in-out;    
 }
 
-svg:hover .svgHoverLt {
+.gitIcon:hover .svgHover, .linkedIn:hover .svgHover {
+    fill: #291512;
+}
+
+.gitIcon:hover .svgHoverLt, .linkedIn:hover .svgHoverLt {
     fill: #fefae0;
-}
-
-.navLink:hover {
-    color: #292919;
 }
 
 .navbar-toggler {
@@ -134,7 +154,7 @@ header h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 0;
 }
 
 .indexProject {
@@ -144,6 +164,7 @@ header h3 {
     padding: 20px 10px 0 10px;
     flex-grow: 1;
     position: relative;
+    transition: color .15s ease-in-out, text-shadow .15s ease-in-out;
 }
 
 .indexProject img {
@@ -162,14 +183,29 @@ header h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4em;
+    font-size: 7vw;
     text-align: center;
+}
+
+.cover {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-radius: 10px;
+    border: 3px solid #bc6c25;
+    transition: background-color .15s ease-in-out;
+}
+
+.cover:hover {
+    background-color: rgba(0,0,0,.6);
 }
 
 .homeProjects, .contactForm, .homeAbout, .professional, .musical, .weird, .baking {
     border-radius: 10px;
     margin: 3vw auto;
-    border: 4px solid #291512;
+    border: .4vw solid #291512;
     width: 95vw;    
 }
 
@@ -225,20 +261,6 @@ header h3 {
 .homeProjects section::-webkit-scrollbar-thumb {
     background: linear-gradient(#9f5b20, #3f211c);
     border-radius: 10px;
-}
-
-.cover {
-    width: calc(100% - 20px);
-    height: calc(100% - 20px);
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    border-radius: 10px;
-    border: 3px solid #bc6c25;
-}
-
-.cover:hover {
-    background-color: rgba(0,0,0,.6);
 }
 
 .contactForm {
@@ -382,18 +404,82 @@ iframe {
 .projectShow {
     display: flex;
     padding: 0 5vw 2vw 5vw;
+    justify-content: space-between;
 }
 
-.projectShow img, .projectShow video, .projectLeft {
-    width: 45vw;
+.projectShowTitle {
+    font-size: 5vw;
+    width: max-content;
+    margin: 2vw auto 1vw auto;
 }
 
-.projectLeft {
-    padding: 0 4vw;
+.projectShowSubtitle {
+    font-size: 2.5vw;
+    width: max-content;
+    margin: -1.5vw auto 2vw auto;
 }
 
-.projectShow p {
-    font-size: 2vw;
+.projectLinks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75vw;
+    margin: -1vw auto 1vw auto;
+}
+
+.projectLink {
+    color: #bc6c25;    
+    text-decoration: none;
+    font-size: 2.8vw;
+    transition: color .15s ease-in-out;
+}
+
+.projectIcon {
+    height: 2.5vw;
+    width: 2.5vw;
+    fill: #bc6c25;    
+    transition: fill .15s ease-in-out;
+}
+
+.projectLink:hover {
+    color: #fefae0;
+}
+
+.projectLink:hover .projectIcon {
+    fill: #fefae0;
+}
+
+.projectImages, .projectImages img, .projectImages video, .projectLeft {
+    width: 43vw;
+}
+
+.projectImages img, .projectImages video {
+    margin: .8vw 0;
+    border-radius: 1vw;
+    border: .3vw solid #bc6c25;
+}
+
+.evenBlurb, .oddBlurb {
+    font-size: 2.2vw;
+    border-radius: 1vw;
+    border: .3vw solid #291512;
+    width: 36vw;
+    height: max-content;
+    margin-bottom: 2vw;
+    padding: 2vw;
+}
+
+.evenBlurb p, .oddBlurb p {
+    height: max-content;
+}
+
+.evenBlurb {
+    background-color: #92a162;
+    color: #291512;
+}
+
+.oddBlurb {
+    margin-left: auto;
+    background-color: #9f5b20;
 }
 
 footer {
@@ -408,12 +494,19 @@ footer {
     .navLink {
         font-size: 2.4vw;
     }
+    .resumeIcon {
+        height: 2.4vw;
+        width: 2.4vw;
+    }
 }
 
 @media (max-width: 900px) {
     .indexProject {
         width: 100%;
         padding: 5px 8px;
+    }
+    .indexProject h1 {
+        font-size: 10vw;
     }
     .cover {
         width: calc(100% - 16px);
@@ -426,6 +519,10 @@ footer {
     }
     .navLink {
         font-size: 3vw;
+    }
+    .resumeIcon {
+        height: 3vw;
+        width: 3vw;
     }
     .linkedIn  {
         height: 10vw;
@@ -455,6 +552,17 @@ footer {
     .baking {
         height: 32vw;
     }
+
+    .projectLinks {
+        width: 85vw;
+    }
+    .projectLink {
+        font-size: 3.5vw;
+    }
+    .projectIcon {
+        width: 3.3vw;
+        height: 3.3vw;
+    }    
     footer {
         font-size: 3vw;
     }
@@ -558,14 +666,46 @@ footer {
     }
 }
 
+@media (max-width: 500px) {
+    .projectShow {
+        flex-direction: column;
+    }
+    .projectShowTitle {
+        font-size: 6vw;
+    }
+    .projectShowSubtitle {
+        font-size: 4vw;
+        width: 85vw;
+        text-align: center;
+    }
+    .projectLinks {
+        width: 100vw;    
+    }
+    .projectLink {
+        font-size: 4.3vw;    
+    }
+    .projectLeft, .projectImages {
+        margin: auto;
+        width: 80vw;
+    }
+    .oddBlurb, .evenBlurb {
+        font-size: 4vw;
+        text-align: center;
+        width: 60vw;
+    }
+    .projectImages img, .projectImages video {
+        width: 80vw;
+    }
+}
+
 @media (max-width: 330px) {
     .professional {
         height: 85vw;
     }
     .contactForm {
-        height: 100vw;
+        line-height: 5vw;
     }
     .inputs {
-        height: 80vw;
+        height: 60vw;
     }
 }

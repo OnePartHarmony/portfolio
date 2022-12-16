@@ -13,7 +13,10 @@ const currentProjects = [
         title: "Rule of 3",
         subTitle: "A logic-based card game",
         indexImage: ruleOf3,
+        deployedLink: "https://onepartharmony.github.io/rule-of-3/",
+        gitHubLink: "https://github.com/OnePartHarmony/rule-of-3",
         description: [
+            "Note: This game is not yet optimized for smaller screens - coming soon.",
             "Based on the card game Set",
             ""
         ],
@@ -22,15 +25,34 @@ const currentProjects = [
     },
     {
         title: "Baraka",
-        indexImage: baraka
+        subTitle: "A turn-based resource management board game for two to four players",
+        indexImage: baraka,
+        frontEndLink: "https://github.com/OnePartHarmony/Client-Baraka-Capstone",
+        backEndLink: "https://github.com/OnePartHarmony/Server-Baraka-Capstone",
+        description: [],
+        videos: [],
+        images: []
     },
     {
         title: "SetList",
-        indexImage: setList
+        indexImage: setList,
+        subTitle: "A web app for musicians to organize repertoire songs and set lists",
+        deployedLink: "https://setlist.fly.dev/",
+        gitHubLink: "https://github.com/OnePartHarmony/setList",
+        description: [],
+        videos: [],
+        images: []   
     },
     {
         title: "Git Input",
-        indexImage: gitInput
+        indexImage: gitInput,
+        subTitle: "A web app for software engineers to anonymously review employer companies",
+        deployedLink: "https://git-input.netlify.app/",
+        frontEndLink: "https://github.com/OnePartHarmony/WDSTF-Project3-Client",
+        backEndLink: "https://github.com/OnePartHarmony/WDSTF-Project3-API",
+        description: [],
+        videos: [],
+        images: []        
     }    
 ]
 
