@@ -1,26 +1,34 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5adea19a.css",
-    "main.js": "/portfolio/static/js/main.d3b7f422.js",
-    "static/media/WinScreen.mp4": "/portfolio/static/media/WinScreen.db2cd231969fa223cc15.mp4",
+    "main.css": "/portfolio/static/css/main.c4f53b89.css",
+    "main.js": "/portfolio/static/js/main.b61c6875.js",
+    "static/media/midGame.mp4": "/portfolio/static/media/midGame.b21eb91162fd65da6de9.mp4",
+    "static/media/ChoosingTerritories.mp4": "/portfolio/static/media/ChoosingTerritories.8eb489a165dcbfd23484.mp4",
+    "static/media/WinScreen.mp4": "/portfolio/static/media/WinScreen.2a222be6977f9216bd2e.mp4",
     "static/media/Weird-H.png": "/portfolio/static/media/Weird-H.e6b4cc136272274bcb80.png",
     "static/media/SetList.png": "/portfolio/static/media/SetList.8dc3ca8707d03e0cfabc.png",
     "static/media/Baraka.png": "/portfolio/static/media/Baraka.257332fdc09bf241cdc7.png",
+    "static/media/Draggable.mp4": "/portfolio/static/media/Draggable.e15ae144d46c471ec3f9.mp4",
     "static/media/WeirdH2.png": "/portfolio/static/media/WeirdH2.de1cdd933fe3678a5770.png",
-    "static/media/LoseScreen.mp4": "/portfolio/static/media/LoseScreen.af8ce4e6b2cabe37d950.mp4",
+    "static/media/newGame.png": "/portfolio/static/media/newGame.766e49986f26ff87b1e1.png",
     "static/media/Clown.png": "/portfolio/static/media/Clown.08cc7b82094bbfdb85a5.png",
     "static/media/GitInput.png": "/portfolio/static/media/GitInput.573d1a89c4ff40e284f0.png",
     "static/media/gordita.jpg": "/portfolio/static/media/gordita.18486dc4d0e3108f3c17.jpg",
+    "static/media/LoseScreen.mp4": "/portfolio/static/media/LoseScreen.0defc9c6c2a7b075dc28.mp4",
     "static/media/RuleOf3.png": "/portfolio/static/media/RuleOf3.109cb87a05fda7effe4b.png",
     "static/media/Harms-no-background.png": "/portfolio/static/media/Harms-no-background.77206e354c7bd2661a00.png",
     "static/media/BakingH.jpg": "/portfolio/static/media/BakingH.16d5af5586b8b39696ea.jpg",
     "static/media/foxCookies.JPG": "/portfolio/static/media/foxCookies.1ef836d142c13c853560.JPG",
+    "static/media/SongView.png": "/portfolio/static/media/SongView.f9c045ead0ad99563dbf.png",
+    "static/media/GitWelcome.png": "/portfolio/static/media/GitWelcome.73f46b061a9883fc4519.png",
+    "static/media/GroupView.png": "/portfolio/static/media/GroupView.2ca5431bb6b7a653f76e.png",
+    "static/media/ReviewStars.mp4": "/portfolio/static/media/ReviewStars.2ad9197d9b2c06bfeaaf.mp4",
     "index.html": "/portfolio/index.html",
-    "main.5adea19a.css.map": "/portfolio/static/css/main.5adea19a.css.map",
-    "main.d3b7f422.js.map": "/portfolio/static/js/main.d3b7f422.js.map"
+    "main.c4f53b89.css.map": "/portfolio/static/css/main.c4f53b89.css.map",
+    "main.b61c6875.js.map": "/portfolio/static/js/main.b61c6875.js.map"
   },
   "entrypoints": [
-    "static/css/main.5adea19a.css",
-    "static/js/main.d3b7f422.js"
+    "static/css/main.c4f53b89.css",
+    "static/js/main.b61c6875.js"
   ]
 }
