@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { useLocation, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import currentProjects from "../CurrentProjects"
 import { Link } from "react-router-dom"
 
@@ -8,21 +8,23 @@ const ProjectShow = () => {
     const {id} = useParams()
     const project = currentProjects[id]
 
-    const projectText = project.description?.map((item, index) => {
-        const oddOrEven = (index % 2 === 0) ? "evenBlurb" : "oddBlurb"
-        return (
-            <div key={index} className={oddOrEven} >
-                <p style={{margin:"auto"}}>{item}</p>                
-            </div>
-
-    )})
-
-    const videos = project.videos?.map((item, index) => (
-        <video key={index} muted={true} playsInline={true} controls autoPlay={true} loop={true}>
-            <source src={item} type="video/mp4"/>
-            Your browser does not support this video.
-        </video>
-    ))
+    let projectText = project.description?.map((item, index) => {
+            const oddOrEven = (index % 2 === 0) ? "evenBlurb" : "oddBlurb"
+            return (
+                <div key={item} className={oddOrEven} >
+                    <p style={{margin:"auto"}}>{item}</p>                
+                </div>
+    
+        )})    
+    let images = project.images?.map(item => (
+            <img key={item} src={item} alt={`${project.title} screenshot`}/>
+        ))
+    let videos = project.videos?.map(item => (
+            <video key={item} muted={true} playsInline={true} controls autoPlay={true} loop={true}>
+                <source src={item} type="video/mp4"/>
+                Your browser does not support this video.
+            </video>
+        ))
 
     const externalLinkIcon = (
         <svg className="projectIcon" alt="opens in new tab" viewBox="0 0 96 96" width="96px" height="96px">
@@ -60,13 +62,14 @@ const ProjectShow = () => {
                     </>              
                 }
             </section>            
-            <hr style={{width: "70vw", margin: "0 auto 2vw auto", borderBottom: "2px solid #fefae0",}}/>
+            <hr/>
             <div className="projectShow">
                 <section className="projectLeft">
                     {projectText}
                 </section>
                 <section className="projectImages">
-                    <img src={project.indexImage} alt={project.title}/>
+                    <img src={project.indexImage} alt={project.title}/>                    
+                    {images}
                     {videos}
                 </section>
             </div>

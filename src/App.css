@@ -408,6 +408,7 @@ iframe {
     display: flex;
     padding: 0 5vw 2vw 5vw;
     justify-content: space-between;
+    align-items: stretch;    
 }
 
 .projectShowTitle {
@@ -450,12 +451,28 @@ iframe {
     fill: #fefae0;
 }
 
+hr {
+    width: 80vw;
+    margin: 0 auto 2vw auto;
+    border-bottom: .2vw solid #fefae0;
+}
+
 .projectLink:hover .projectIcon {
     fill: #291512;
 }
 
-.projectImages, .projectImages img, .projectImages video, .projectLeft {
-    width: 43vw;
+.projectImages, .projectImages img, .projectImages video {
+    width: 40vw;
+}
+
+.projectImages, .projectLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.projectLeft {
+    width: 46vw;
 }
 
 .projectImages img, .projectImages video {
@@ -469,10 +486,10 @@ iframe {
     font-size: 2.2vw;
     border-radius: 1vw;
     border: .3vw solid #291512;
-    width: 38vw;
+    width: 37vw;
     height: max-content;
-    margin-bottom: 2vw;
-    padding: 1vw;
+    margin-bottom: 1vw;
+    padding: 1.5vw;
 }
 
 .evenBlurb p, .oddBlurb p {
@@ -480,13 +497,12 @@ iframe {
 }
 
 .evenBlurb {
-    background-color: #92a162;
-    color: #291512;
+    background-color: #3c4323;
 }
 
 .oddBlurb {
     margin-left: auto;
-    background-color: #9f5b20;
+    background-color: #6f3f15;
 }
 
 .projectNav {
@@ -571,7 +587,6 @@ footer {
     .baking {
         height: 32vw;
     }
-
     .projectLinks {
         width: 85vw;
     }
@@ -581,7 +596,28 @@ footer {
     .projectIcon {
         width: 3.3vw;
         height: 3.3vw;
+    }
+    hr {
+        width: 83vw;
+        margin: 2vw auto 4vw auto;
+        border-bottom: .4vw solid #fefae0;
+    }
+    .projectShow {
+        padding: 0 2vw 2vw 2vw;
+    }
+    .projectImages, .projectImages img, .projectImages video {
+        width: 44vw;
     }    
+    .projectLeft {
+        width: 48vw;
+    }
+    .evenBlurb, .oddBlurb {
+        width: 40vw;
+        font-size: 2.9vw;
+        margin-bottom: 2.5vw;
+        padding: 1.5vw;
+    }
+
     footer {
         font-size: 3vw;
     }
@@ -685,7 +721,7 @@ footer {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .projectShow {
         flex-direction: column;
     }
@@ -705,15 +741,19 @@ footer {
     }
     .projectLeft, .projectImages {
         margin: auto;
-        width: 80vw;
+        width: 90vw;
     }
     .oddBlurb, .evenBlurb {
         font-size: 4vw;
         text-align: center;
-        width: 60vw;
+        width: 70vw;
     }
     .projectImages img, .projectImages video {
-        width: 80vw;
+        width: 85vw;
+        margin: 1.2vw auto;
+    }
+    .projectNavLink {
+        font-size: 4.4vw;
     }
 }
 

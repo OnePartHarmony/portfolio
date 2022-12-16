@@ -5,7 +5,13 @@ import baraka from "./images/Baraka.png"
 import win from "./images/WinScreen.mp4"
 import lose from "./images/LoseScreen.mp4"
 import midGame from "./images/midGame.mp4"
-
+import gitWelcome from "./images/GitWelcome.png"
+import reviewStars from "./images/ReviewStars.mp4"
+import songView from "./images/SongView.png"
+import groupView from "./images/GroupView.png"
+import dragAndDrop from "./images/Draggable.mp4"
+import placeDudes from "./images/ChoosingTerritories.mp4"
+import newGame from "./images/newGame.png"
 
 
 const currentProjects = [
@@ -24,8 +30,7 @@ const currentProjects = [
             "Automatic redraws and clickability are delayed with timeouts to create a smooth user experience where one has time to see what cards made a set.",
             "I built this app in my third week of learning to code, using only vanilla JavaScript, HTML, and CSS."
         ],
-        videos: [win, midGame, lose],
-        images: []
+        videos: [win, midGame, lose]
     },
     {
         title: "Baraka",
@@ -38,11 +43,11 @@ const currentProjects = [
             "Created with two other student developers, this game lets a user play with up to three friends at once.",
             "The game centers around a map of territories with stats for population, wealth, and abundance.  Players control territories with priests and soldiers.  Each season, players choose from a variety of commands to issue to each controlled territory, then commands are executed one at a time in backend game logic and updates are sent to players.  A player wins by killing all enemy priests.",
             "I implemented socket.io to create a live online multiplayer experience.  Each time a change is made to the map, all players get instant updates.",
-            "Using original art by my teammate, I created the map of hexagons that displays stats for each territory and displays contextual visual cues for clickability.",
+            "Using original art by my teammate, I created a responsive map of hexagons that displays stats for each territory and displays contextual visual cues for clickability.",
             "Technologies used: React, Express, Node, MongoDB, JavaScript, HTML, CSS, Bootstrap, Socket.io"
         ],
-        videos: [],
-        images: []
+        videos: [placeDudes],
+        images: [newGame]
     },
     {
         title: "SetList",
@@ -52,13 +57,13 @@ const currentProjects = [
         gitHubLink: "https://github.com/OnePartHarmony/setList",
         description: [
             "Inspired by my barbershop quartet, this app helps bands and other musical ensembles to organize their repertoire into set lists based on length.",
-            "As the content for this app is user-generated, I seeded the database with content that can be viewed by logging in with the username 'JohnLennon' and the password '123'.",
+            "Beacause the content for this app is user-generated, I seeded the database with content that can be viewed by logging in with the username 'JohnLennon' and the password '123'.",
             "A user is able to work as one of multiple groups they may be a part of.  Members of a group have full CRUD ability for songs, set lists, and comments, as well as the group itsself.",
             "I implemented drag-and-drop functionality for a user to reorder a set list.",
             "Technologies used: Express, Node, MongoDB, JavaScript, Liquid.js, HTML, CSS, Bootstrap"
         ],
-        videos: [],
-        images: []   
+        videos: [dragAndDrop],
+        images: [groupView, songView]   
     },
     {
         title: "Git Input",
@@ -72,8 +77,8 @@ const currentProjects = [
             "Users can rate a company using stars, which updates the company average. Signed-in users have full CRUD functionality for companies, reviews, and comments.",
             "Technologies used: React, Express, Node, MongoDB, JavaScript, HTML, CSS, Bootstrap"
         ],
-        videos: [],
-        images: []        
+        videos: [reviewStars],
+        images: [gitWelcome]        
     }    
 ]
 
