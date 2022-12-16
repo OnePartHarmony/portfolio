@@ -1,5 +1,5 @@
-import React from "react"
-import { useParams } from "react-router-dom"
+import React, { useEffect } from "react"
+import { useLocation, useParams } from "react-router-dom"
 import currentProjects from "../CurrentProjects"
 import { Link } from "react-router-dom"
 
@@ -7,7 +7,6 @@ const ProjectShow = () => {
 
     const {id} = useParams()
     const project = currentProjects[id]
-
 
     const projectText = project.description?.map((item, index) => {
         const oddOrEven = (index % 2 === 0) ? "evenBlurb" : "oddBlurb"
