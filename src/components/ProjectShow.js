@@ -1,6 +1,7 @@
 import React from "react"
 import { useParams } from "react-router-dom"
 import currentProjects from "../CurrentProjects"
+import { Link } from "react-router-dom"
 
 const ProjectShow = () => {
 
@@ -69,6 +70,10 @@ const ProjectShow = () => {
                     <img src={project.indexImage} alt={project.title}/>
                     {videos}
                 </section>
+            </div>
+            <div className="projectNav">
+                {(id > 0) && <Link className="projectNavLink" to={`/portfolio/projects/${parseInt(id) - 1}`} >{"\u2b05"} Previous Project</Link>}
+                {(id < currentProjects.length - 1) && <Link className="projectNavLink" to={`/portfolio/projects/${parseInt(id) + 1}`} >Next project {"\u2b95"}</Link>}
             </div>
         </>
     )

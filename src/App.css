@@ -319,7 +319,7 @@ header h3 {
     margin-top: 2vw;
 }
 
-.contactForm button {
+.contactForm button, .projectNavLink, .projectLink {
     border-radius: 1vw;
     background: linear-gradient(#bc6c25, #291512);
     color: #fefae0;
@@ -327,12 +327,15 @@ header h3 {
     padding: .3vw .8vw 0 .8vw;
     box-shadow: 2px 1px 2px #291512;
     font-size: 2.5vw;
-    text-shadow: 1px 1px #291512;
+    text-shadow: .2vw .2vw #291512;
     margin: 1vw 0;
+    transition: background .15s ease-in-out;
 }
 
-.contactForm button:hover {
+.contactForm button:hover, .projectNavLink:hover, .projectLink:hover {
     background: linear-gradient(#291512, #bc6c25);
+    color:#291512;
+    text-shadow: none;
 }
 
 .emailResponse {
@@ -426,26 +429,29 @@ iframe {
     margin: -1vw auto 1vw auto;
 }
 
+.projectLink, .projectNavLink {
+    background: linear-gradient(#bc6c25, #543011);
+    border-radius: 1.5vw;
+}
+
+.projectLink:hover, .projectNavLink:hover {
+    background: linear-gradient(#543011, #bc6c25);
+}
+
 .projectLink {
-    color: #bc6c25;    
     text-decoration: none;
-    font-size: 2.8vw;
-    transition: color .15s ease-in-out;
+    font-size: 2.6vw;
+    padding: .2vw 1.5vw 0 1.5vw;    
 }
 
 .projectIcon {
     height: 2.5vw;
     width: 2.5vw;
-    fill: #bc6c25;    
-    transition: fill .15s ease-in-out;
-}
-
-.projectLink:hover {
-    color: #fefae0;
+    fill: #fefae0;
 }
 
 .projectLink:hover .projectIcon {
-    fill: #fefae0;
+    fill: #291512;
 }
 
 .projectImages, .projectImages img, .projectImages video, .projectLeft {
@@ -480,6 +486,18 @@ iframe {
 .oddBlurb {
     margin-left: auto;
     background-color: #9f5b20;
+}
+
+.projectNav {
+    display: flex;
+    justify-content: center;
+}
+
+.projectNavLink {
+    text-decoration: none;
+    margin: 2vw;
+    font-size: 2.4vw;
+    padding: .5vw 1.5vw .3vw 1.5vw;
 }
 
 footer {
