@@ -9,10 +9,12 @@ import ProjectIndex from "./components/ProjectIndex"
 import ProjectShow from "./components/ProjectShow"
 import Home from "./components/Home"
 import AboutMe from "./components/AboutMe"
+import ScrollToTop from "./components/ScrollToTop"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <BrowserRouter>
+    <ScrollToTop />
     <div className="App">
       <Navigation />
       <Routes>
@@ -22,6 +24,7 @@ root.render(
         <Route path='/portfolio/projects/:id' element={<ProjectShow />} />
       </Routes>
     </div>
+    <footer><br/>Harmony Luise Brown 2022</footer>
   </BrowserRouter>
 )
 
