@@ -14,12 +14,17 @@ body {
     padding: 0;
 }
 
+.navbar {
+    --bs-navbar-active-color: #291512;
+}
+
 .brand {
     font-size: 3vw;
     color: #bc6c25;
     text-shadow: 1px 0px #291512;
     font-family: 'Mountains of Christmas', cursive;
     margin: -1vw;
+    transition: color .15s ease-in-out;
 }
 
 .brand:hover {
@@ -31,10 +36,25 @@ body {
     font-size: 2vw;
 }
 
+.resumeIcon {
+    fill: #fefae0;
+    height: 2vw;
+    width: 2vw;
+    transition: fill .15s ease-in-out;
+}
+
+.navLink:hover {
+    color: #291512;
+}
+
+.navLink:hover .resumeIcon{
+    fill: #291512;
+}
+
 .linkedIn {
     height: 8vw;
     margin: -1.7vw 0;
-    font-size: 0; 
+    font-size: 0;
 }
 
 .gitIcon {
@@ -43,16 +63,16 @@ body {
     font-size: 0; 
 }
 
-svg:hover .svgHover {
-    fill: #292919;
+.svgHover, .svgHoverLt {
+    transition: fill .15s ease-in-out;    
 }
 
-svg:hover .svgHoverLt {
+.gitIcon:hover .svgHover, .linkedIn:hover .svgHover {
+    fill: #291512;
+}
+
+.gitIcon:hover .svgHoverLt, .linkedIn:hover .svgHoverLt {
     fill: #fefae0;
-}
-
-.navLink:hover {
-    color: #292919;
 }
 
 .navbar-toggler {
@@ -134,7 +154,7 @@ header h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 0;
 }
 
 .indexProject {
@@ -144,6 +164,7 @@ header h3 {
     padding: 20px 10px 0 10px;
     flex-grow: 1;
     position: relative;
+    transition: color .15s ease-in-out, text-shadow .15s ease-in-out;
 }
 
 .indexProject img {
@@ -162,14 +183,29 @@ header h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4em;
+    font-size: 7vw;
     text-align: center;
+}
+
+.cover {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-radius: 10px;
+    border: 3px solid #bc6c25;
+    transition: background-color .15s ease-in-out;
+}
+
+.cover:hover {
+    background-color: rgba(0,0,0,.6);
 }
 
 .homeProjects, .contactForm, .homeAbout, .professional, .musical, .weird, .baking {
     border-radius: 10px;
     margin: 3vw auto;
-    border: 4px solid #291512;
+    border: .4vw solid #291512;
     width: 95vw;    
 }
 
@@ -225,20 +261,6 @@ header h3 {
 .homeProjects section::-webkit-scrollbar-thumb {
     background: linear-gradient(#9f5b20, #3f211c);
     border-radius: 10px;
-}
-
-.cover {
-    width: calc(100% - 20px);
-    height: calc(100% - 20px);
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    border-radius: 10px;
-    border: 3px solid #bc6c25;
-}
-
-.cover:hover {
-    background-color: rgba(0,0,0,.6);
 }
 
 .contactForm {
@@ -297,7 +319,7 @@ header h3 {
     margin-top: 2vw;
 }
 
-.contactForm button {
+.contactForm button, .projectNavLink, .projectLink {
     border-radius: 1vw;
     background: linear-gradient(#bc6c25, #291512);
     color: #fefae0;
@@ -305,12 +327,15 @@ header h3 {
     padding: .3vw .8vw 0 .8vw;
     box-shadow: 2px 1px 2px #291512;
     font-size: 2.5vw;
-    text-shadow: 1px 1px #291512;
+    text-shadow: .2vw .2vw #291512;
     margin: 1vw 0;
+    transition: background .15s ease-in-out;
 }
 
-.contactForm button:hover {
+.contactForm button:hover, .projectNavLink:hover, .projectLink:hover {
     background: linear-gradient(#291512, #bc6c25);
+    color:#291512;
+    text-shadow: none;
 }
 
 .emailResponse {
@@ -382,22 +407,119 @@ iframe {
 .projectShow {
     display: flex;
     padding: 0 5vw 2vw 5vw;
+    justify-content: space-between;
+    align-items: stretch;    
 }
 
-.projectShow img, .projectShow video, .projectLeft {
-    width: 45vw;
+.projectShowTitle {
+    font-size: 5vw;
+    width: max-content;
+    margin: 2vw auto 1vw auto;
+}
+
+.projectShowSubtitle {
+    font-size: 2.5vw;
+    width: max-content;
+    margin: -1.5vw auto 2vw auto;
+}
+
+.projectLinks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75vw;
+    margin: -1vw auto 1vw auto;
+}
+
+.projectLink, .projectNavLink {
+    background: linear-gradient(#bc6c25, #543011);
+    border-radius: 1.5vw;
+}
+
+.projectLink:hover, .projectNavLink:hover {
+    background: linear-gradient(#543011, #bc6c25);
+}
+
+.projectLink {
+    text-decoration: none;
+    font-size: 2.6vw;
+    padding: .2vw 1.5vw 0 1.5vw;    
+}
+
+.projectIcon {
+    height: 2.5vw;
+    width: 2.5vw;
+    fill: #fefae0;
+}
+
+hr {
+    width: 80vw;
+    margin: 0 auto 2vw auto;
+    border-bottom: .2vw solid #fefae0;
+}
+
+.projectLink:hover .projectIcon {
+    fill: #291512;
+}
+
+.projectImages, .projectImages img, .projectImages video {
+    width: 40vw;
+}
+
+.projectImages, .projectLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .projectLeft {
-    padding: 0 4vw;
+    width: 46vw;
 }
 
-.projectShow p {
-    font-size: 2vw;
+.projectImages img, .projectImages video {
+    margin: .8vw 0;
+    border-radius: 1vw;
+    border: .3vw solid #bc6c25;
+}
+
+.evenBlurb, .oddBlurb {
+    text-align: center;
+    font-size: 2.2vw;
+    border-radius: 1vw;
+    border: .3vw solid #291512;
+    width: 37vw;
+    height: max-content;
+    margin-bottom: 1vw;
+    padding: 1.5vw;
+}
+
+.evenBlurb p, .oddBlurb p {
+    height: max-content;
+}
+
+.evenBlurb {
+    background-color: #3c4323;
+}
+
+.oddBlurb {
+    margin-left: auto;
+    background-color: #6f3f15;
+}
+
+.projectNav {
+    display: flex;
+    justify-content: center;
+}
+
+.projectNavLink {
+    text-decoration: none;
+    margin: 2vw;
+    font-size: 2.4vw;
+    padding: .5vw 1.5vw .3vw 1.5vw;
 }
 
 footer {
     text-align: center;
+    font-size: 2vw;
 }
 
 @media (max-width: 1300px) {
@@ -407,12 +529,19 @@ footer {
     .navLink {
         font-size: 2.4vw;
     }
+    .resumeIcon {
+        height: 2.4vw;
+        width: 2.4vw;
+    }
 }
 
 @media (max-width: 900px) {
     .indexProject {
         width: 100%;
         padding: 5px 8px;
+    }
+    .indexProject h1 {
+        font-size: 10vw;
     }
     .cover {
         width: calc(100% - 16px);
@@ -425,6 +554,10 @@ footer {
     }
     .navLink {
         font-size: 3vw;
+    }
+    .resumeIcon {
+        height: 3vw;
+        width: 3vw;
     }
     .linkedIn  {
         height: 10vw;
@@ -453,6 +586,40 @@ footer {
     }
     .baking {
         height: 32vw;
+    }
+    .projectLinks {
+        width: 85vw;
+    }
+    .projectLink {
+        font-size: 3.5vw;
+    }
+    .projectIcon {
+        width: 3.3vw;
+        height: 3.3vw;
+    }
+    hr {
+        width: 83vw;
+        margin: 2vw auto 4vw auto;
+        border-bottom: .4vw solid #fefae0;
+    }
+    .projectShow {
+        padding: 0 2vw 2vw 2vw;
+    }
+    .projectImages, .projectImages img, .projectImages video {
+        width: 44vw;
+    }    
+    .projectLeft {
+        width: 48vw;
+    }
+    .evenBlurb, .oddBlurb {
+        width: 40vw;
+        font-size: 2.9vw;
+        margin-bottom: 2.5vw;
+        padding: 1.5vw;
+    }
+
+    footer {
+        font-size: 3vw;
     }
 }
 
@@ -493,7 +660,7 @@ footer {
         flex-direction: column;
         align-content: center;
         width: 80vw;
-        margin: 0 5vw;
+        margin: auto;
     }
     .contactForm {
         height: 73vw;
@@ -551,5 +718,53 @@ footer {
     }
     .weird {
         height: 40vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .projectShow {
+        flex-direction: column;
+    }
+    .projectShowTitle {
+        font-size: 6vw;
+    }
+    .projectShowSubtitle {
+        font-size: 4vw;
+        width: 85vw;
+        text-align: center;
+    }
+    .projectLinks {
+        width: 100vw;    
+    }
+    .projectLink {
+        font-size: 4.3vw;    
+    }
+    .projectLeft, .projectImages {
+        margin: auto;
+        width: 90vw;
+    }
+    .oddBlurb, .evenBlurb {
+        font-size: 4vw;
+        text-align: center;
+        width: 70vw;
+    }
+    .projectImages img, .projectImages video {
+        width: 85vw;
+        margin: 1.2vw auto;
+    }
+    .projectNavLink {
+        font-size: 4.4vw;
+    }
+}
+
+@media (max-width: 330px) {
+    .professional {
+        height: 85vw;
+    }
+    .contactForm {
+        line-height: 5vw;
+    }
+    .inputs {
+        height: 60vw;
     }
 }
