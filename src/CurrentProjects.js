@@ -70,8 +70,8 @@ const currentProjects = [
         indexImage: gitInput,
         subTitle: "A web app for software engineers to anonymously review employer companies",
         deployedLink: "https://git-input.netlify.app/",
-        frontEndLink: "https://github.com/OnePartHarmony/WDSTF-Project3-Client",
-        backEndLink: "https://github.com/OnePartHarmony/WDSTF-Project3-API",
+        frontEndLink: "https://github.com/OnePartHarmony/GitInput-Client",
+        backEndLink: "https://github.com/OnePartHarmony/GitInput-API",
         description: [
             "This was my first project working as a team, with an assigned team of three other classmates.  As git manager, I worked across the full stack to assure we met MVP in our short project window by scrutinizing every pull request and helping each teammate with debugging.",
             "Users can rate a company using stars, which updates the company average. Signed-in users have full CRUD functionality for companies, reviews, and comments.",
