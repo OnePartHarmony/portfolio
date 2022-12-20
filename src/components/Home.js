@@ -15,7 +15,7 @@ const Home = () => {
             <div className="homeProjects">
                 <h2>Check Out Some of My Projects:</h2>
                 <div className="sectionWrap">
-                    <section>
+                    <section className="homeProjectsSection">
                         <ProjectIndex />                    
                     </section>                    
                 </div>
