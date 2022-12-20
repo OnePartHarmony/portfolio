@@ -22,13 +22,13 @@ const currentProjects = [
         deployedLink: "https://onepartharmony.github.io/rule-of-3/",
         gitHubLink: "https://github.com/OnePartHarmony/rule-of-3",
         description: [
-            "Note: This game is not yet optimized for smaller screens - coming soon.",
             "Rule of 3 is based on Set, a card game I grew up playing alone for hours.  The player has to find sets of three cards with symbols that are all the same or all different in four ways: color, shape, number, and fill.",
             "This app improves on the physical version of the game by allowing the player to check if a set is currently possible.  There is an easy mode for learning the game, which reduces the card properties.",
             "The help button finds a set for the player.  The player can lose the game by asking for help more times than they found sets alone.",
             "I created simple animations for wins and losses using an html canvas and randomly generated colours.",
             "Automatic redraws and clickability are delayed with timeouts to create a smooth user experience where one has time to see what cards made a set.",
-            "I built this app in my third week of learning to code, using only vanilla JavaScript, HTML, and CSS."
+            "I built this app in my third week of learning to code, using only vanilla JavaScript, HTML, and CSS.",
+            "Note: This game is not yet optimized for smaller screens - coming soon."
         ],
         videos: [win, midGame, lose]
     },
@@ -39,12 +39,12 @@ const currentProjects = [
         frontEndLink: "https://github.com/OnePartHarmony/Client-Baraka-Capstone",
         backEndLink: "https://github.com/OnePartHarmony/Server-Baraka-Capstone",
         description: [
-            "Note: This game is not yet optimized for smaller screens.",
             "Created with two other student developers, this game lets a user play with up to three friends at once.",
             "The game centers around a map of territories with stats for population, wealth, and abundance.  Players control territories with priests and soldiers.  Each season, players choose from a variety of commands to issue to each controlled territory, then commands are executed one at a time in backend game logic and updates are sent to players.  A player wins by killing all enemy priests.",
             "I implemented socket.io to create a live online multiplayer experience.  Each time a change is made to the map, all players get instant updates.",
             "Using original art by my teammate, I created a responsive map of hexagons that displays stats for each territory and displays contextual visual cues for clickability.",
-            "Technologies used: React, Express, Node, MongoDB, JavaScript, HTML, CSS, Bootstrap, Socket.io"
+            "Technologies used: React, Express, Node, MongoDB, JavaScript, HTML, CSS, Bootstrap, Socket.io",
+            "Note: This game is not yet optimized for smaller screens."
         ],
         videos: [placeDudes],
         images: [newGame]
