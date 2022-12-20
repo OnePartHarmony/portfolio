@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c4f53b89.css",
-    "main.js": "/portfolio/static/js/main.1a6c3351.js",
+    "main.css": "/portfolio/static/css/main.bd34ee64.css",
+    "main.js": "/portfolio/static/js/main.ee659305.js",
     "static/media/midGame.mp4": "/portfolio/static/media/midGame.b21eb91162fd65da6de9.mp4",
     "static/media/ChoosingTerritories.mp4": "/portfolio/static/media/ChoosingTerritories.8eb489a165dcbfd23484.mp4",
     "static/media/WinScreen.mp4": "/portfolio/static/media/WinScreen.2a222be6977f9216bd2e.mp4",
@@ -24,11 +24,11 @@
     "static/media/GroupView.png": "/portfolio/static/media/GroupView.2ca5431bb6b7a653f76e.png",
     "static/media/ReviewStars.mp4": "/portfolio/static/media/ReviewStars.2ad9197d9b2c06bfeaaf.mp4",
     "index.html": "/portfolio/index.html",
-    "main.c4f53b89.css.map": "/portfolio/static/css/main.c4f53b89.css.map",
-    "main.1a6c3351.js.map": "/portfolio/static/js/main.1a6c3351.js.map"
+    "main.bd34ee64.css.map": "/portfolio/static/css/main.bd34ee64.css.map",
+    "main.ee659305.js.map": "/portfolio/static/js/main.ee659305.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4f53b89.css",
-    "static/js/main.1a6c3351.js"
+    "static/css/main.bd34ee64.css",
+    "static/js/main.ee659305.js"
   ]
 }
