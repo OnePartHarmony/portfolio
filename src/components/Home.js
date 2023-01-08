@@ -13,7 +13,7 @@ const Home = () => {
         <div className="home">
             <Header />
             <div className="homeAbout">
-                <Link to="/portfolio/aboutHarmony"><h2 onMouseEnter={() => {setHoverAbout(true)}} onMouseLeave={() => setHoverAbout(false)}>{hoverAbout ? "More About Me" : "About Me" }</h2></Link>
+                <Link to="/portfolio/aboutHarmony"><h2 onMouseEnter={() => {setHoverAbout(true)}} onMouseLeave={() => {setHoverAbout(false)}}>{hoverAbout ? "More About Me" : "About Me" }</h2></Link>
                 <Professional />
             </div>
             <div className="homeProjects">
