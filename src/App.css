@@ -77,18 +77,18 @@ body {
 
 .navbar-toggler {
     border: none;
-    height: 3vw;
-    width: 3vw;
-    min-height: 32px;
-    min-width: 35px;
+    height: 8vw;
+    width: 8vw;
+    max-height: 35px;
+    max-width: 35px;
     padding: 0;
 }
 
 .navbar-toggler-icon {
-    height: 2vw;
-    width: 2vw;
-    min-height: 30px;
-    min-width: 30px;
+    height: 8vw;
+    width: 8vw;
+    max-height: 35px;
+    max-width: 35px;
     background-image: url(./images/burgerMenu.png);
 }
 
@@ -229,6 +229,16 @@ header h3 {
 
 .homeAbout h2 {
     font-size: 3vw;
+    color: #291512;
+}
+
+.homeAbout h2:hover, .homeProjects h2:hover {
+    color:rgba(41, 21, 18, .6);
+    text-shadow: none;
+}
+
+.homeAbout a, .homeProjects a {
+    text-decoration: none;
 }
 
 .homeProjects {
@@ -237,7 +247,8 @@ header h3 {
     padding: 2vw;
 }
 
-.homeProjects h2 {    
+.homeProjects h2 {
+    color: #fefae0;
     text-shadow: 1px 1px #291512;
     font-size: 3.5vw;
 }
@@ -636,7 +647,7 @@ footer {
 
 @media (max-width: 700px) {
     .brand {
-        font-size: 7vw;
+        font-size: 8vw;
     }
     .navLink {
         font-size: 4vw;
