@@ -13,7 +13,7 @@ const App = () => {
     return (
         <>
             <Navigation setCurrentPage={setCurrentPage}/>
-            {currentPage === "home" && <Home />}
+            {currentPage === "home" && <Home  setCurrentPage={setCurrentPage}/>}
             {currentPage === "about" && <AboutMe />}
             {currentPage === "projectIndex" && <ProjectIndex />}
             {currentPage === "projectShow" && <ProjectShow id={projectId} setProjectId={setProjectId}/>}        
