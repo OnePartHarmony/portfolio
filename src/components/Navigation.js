@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav"
 // import { NavLink } from "react-router-dom"
 
 const Navigation = (props) => {
-    const {setCurrentPage} = props
+    const {setCurrentPage, wipeProjectId} = props
 
     return (
         <Navbar collapseOnSelect={true} className="navigation" expand="sm">            
@@ -24,11 +24,18 @@ const Navigation = (props) => {
                     </a>
                 </Nav>              
                 <Nav className="ms-auto">
-                    {/* <Nav.Link eventKey="1" as={NavLink} to="/portfolio/projects" className="me-3 navLink">Projects</Nav.Link>
-                    <Nav.Link eventKey="2" as={NavLink} to="/portfolio/aboutHarmony" className="me-3 navLink">Who?</Nav.Link> */}
-
-                    <Nav.Link className="me-3 navLink" onClick={() => setCurrentPage("projectIndex")}>Projects</Nav.Link>
-                    <Nav.Link className="me-3 navLink" onClick={() => setCurrentPage("about")}>Who?</Nav.Link>
+                    <Nav.Link className="me-3 navLink"
+                        onClick={() => {
+                            setCurrentPage("projectIndex")
+                            wipeProjectId()
+                        }}
+                    >Projects</Nav.Link>
+                    <Nav.Link className="me-3 navLink"
+                        onClick={() => {
+                            setCurrentPage("about")
+                            wipeProjectId()
+                        }}
+                    >Who?</Nav.Link>
 
                     <Nav.Link onClick={() => {window.open("/portfolio/hbResume.pdf", "_blank")}}  className="me-3 navLink" download>Resume
                         <svg className="resumeIcon" alt="opens in new tab" viewBox="0 0 96 96" width="96px" height="96px">

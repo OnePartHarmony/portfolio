@@ -8,12 +8,12 @@ import ProjectShow from "./components/ProjectShow"
 const App = () => {
 
     const [currentPage, setCurrentPage] = useState("home")
-    const [projectId, setProjectId] = useState(0)
+    const [projectId, setProjectId] = useState(null)
 
     return (
         <>
-            <Navigation setCurrentPage={setCurrentPage}/>
-            {currentPage === "home" && <Home  setCurrentPage={setCurrentPage}/>}
+            <Navigation setCurrentPage={setCurrentPage} wipeProjectId={() => setProjectId(null)}/>
+            {currentPage === "home" && <Home  setCurrentPage={setCurrentPage} wipeProjectId={() => setProjectId(null)}/>}
             {currentPage === "about" && <AboutMe />}
             {currentPage === "projectIndex" && <ProjectIndex />}
             {currentPage === "projectShow" && <ProjectShow id={projectId} setProjectId={setProjectId}/>}        
