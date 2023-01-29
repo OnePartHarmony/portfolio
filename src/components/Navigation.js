@@ -3,7 +3,9 @@ import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import { NavLink } from "react-router-dom"
 
-const Navigation = () => {
+const Navigation = (setCurrentPage) => {
+    
+
     return (
         <Navbar collapseOnSelect={true} className="navigation" expand="sm">            
             <Navbar.Brand href="/portfolio" className="ms-3 brand">HB</Navbar.Brand>

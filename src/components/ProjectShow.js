@@ -1,11 +1,12 @@
 import React from "react"
-import { useParams } from "react-router-dom"
+// import { useParams } from "react-router-dom"
 import currentProjects from "../CurrentProjects"
 import { Link } from "react-router-dom"
 
-const ProjectShow = () => {
+const ProjectShow = (props) => {
 
-    const {id} = useParams()
+    // const {id} = useParams()
+    const {id, setProjectId} = props
     const project = currentProjects[id]
 
     let projectText = project.description?.map((item, index) => {
