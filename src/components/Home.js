@@ -5,7 +5,7 @@ import Professional from "./Professional"
 import ProjectIndex from "./ProjectIndex"
 
 const Home = (props) => {
-    const {setCurrentPage, wipeProjectId} = props
+    const {setCurrentPage, wipeProjectId, setProjectId} = props
     const [hoverAbout, setHoverAbout] = useState(false)
 
     return (
@@ -27,7 +27,7 @@ const Home = (props) => {
                     }}>Check Out Some of My Projects:</h2>
                 <div className="sectionWrap">
                     <section className="homeProjectsSection">
-                        <ProjectIndex />                    
+                        <ProjectIndex  setCurrentPage={setCurrentPage} setProjectId={setProjectId}/>                    
                     </section>                    
                 </div>
             </div>            
