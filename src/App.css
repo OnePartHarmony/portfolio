@@ -34,6 +34,7 @@ body {
 .navLink {
     color: #fefae0;
     font-size: 2vw;
+    transition: color .15s ease-in-out;
 }
 
 .resumeIcon {
@@ -49,6 +50,10 @@ body {
 
 .navLink:hover .resumeIcon{
     fill: #291512;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #291512;
 }
 
 .linkedIn {
