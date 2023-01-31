@@ -14,9 +14,9 @@ body {
     padding: 0;
 }
 
-.navbar {
+/* .navbar {
     --bs-navbar-active-color: #291512;
-}
+} */
 
 .brand {
     font-size: 3vw;
