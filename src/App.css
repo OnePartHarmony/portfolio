@@ -14,9 +14,9 @@ body {
     padding: 0;
 }
 
-.navbar {
+/* .navbar {
     --bs-navbar-active-color: #291512;
-}
+} */
 
 .brand {
     font-size: 3vw;
@@ -34,6 +34,7 @@ body {
 .navLink {
     color: #fefae0;
     font-size: 2vw;
+    transition: color .15s ease-in-out;
 }
 
 .resumeIcon {
@@ -49,6 +50,10 @@ body {
 
 .navLink:hover .resumeIcon{
     fill: #291512;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #291512;
 }
 
 .linkedIn {
@@ -165,6 +170,7 @@ header h3 {
     flex-grow: 1;
     position: relative;
     transition: color .15s ease-in-out, text-shadow .15s ease-in-out;
+    cursor: pointer;
 }
 
 .indexProject img {
@@ -230,6 +236,7 @@ header h3 {
 .homeAbout h2 {
     font-size: 3vw;
     color: #291512;
+    cursor: pointer;
 }
 
 .homeAbout h2, .homeProjects h2 {
@@ -258,6 +265,7 @@ header h3 {
     text-shadow: 1px 1px #291512;
     /* transition: text-shadow .15s ease-in-out; */
     font-size: 3.5vw;
+    cursor: pointer;
 }
 
 .sectionWrap {

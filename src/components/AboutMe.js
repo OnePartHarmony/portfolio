@@ -24,7 +24,7 @@ const AboutMe = () => {
                 </section>
                 <section className="musical">
                     <p>I've always been a performer.  Growing up in Maine it was a family tradition to dress up as clowns in local parades, and I still go back each year for the Yarmouth Clam Festival.  As an adult I have been in countless musicals, choruses, and even a barbershop quartet.</p>
-                    <iframe src="https://www.youtube.com/embed/ddSUUGBrFsU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/ddSUUGBrFsU" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;"></iframe>
                 </section>
                 <section className="weird">
                     <img src={weird} alt="Harmony as Weird Al" />                    
