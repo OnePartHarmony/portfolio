@@ -19,7 +19,7 @@ import { useEffect } from "react"
 // }
 
 const ScrollToTop = (props) => {
-  const { id } = props
+  const { id, currentPage } = props
 
   useEffect(() => {
     window.scrollTo({
@@ -27,7 +27,7 @@ const ScrollToTop = (props) => {
         left: 0,
         behavior: "instant",
       })
-  }, [id])
+  }, [id, currentPage])
 
   return null
 }

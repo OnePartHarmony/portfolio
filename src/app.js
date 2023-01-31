@@ -16,7 +16,7 @@ const App = () => {
 
     return (
         <>
-            <ScrollToTop id={projectId}/>
+            <ScrollToTop id={projectId} currentPage={currentPage}/>
             <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} wipeProjectId={() => setProjectId(null)}/>
             {currentPage === "home" && <Home  setCurrentPage={setCurrentPage} wipeProjectId={() => setProjectId(null)} setProjectId={setProjectId}/>}
             {currentPage === "about" && <AboutMe />}
