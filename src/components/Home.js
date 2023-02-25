@@ -1,22 +1,33 @@
-import React from "react"
+import React, {useState} from "react"
 import ContactForm from "./ContactForm"
 import Header from "./Header"
 import Professional from "./Professional"
 import ProjectIndex from "./ProjectIndex"
 
-const Home = () => {
+const Home = (props) => {
+    const {setCurrentPage, wipeProjectId, setProjectId} = props
+    const [hoverAbout, setHoverAbout] = useState(false)
+
     return (
         <div className="home">
             <Header />
             <div className="homeAbout">
-                <h2>About Me</h2>
+                <h2 onMouseEnter={() => {setHoverAbout(true)}} onMouseLeave={() => {setHoverAbout(false)}}
+                    onClick={() => {
+                        setCurrentPage("about")
+                        wipeProjectId()
+                    }}
+                >{hoverAbout ? "More About Me" : "About Me" }</h2>
                 <Professional />
             </div>
             <div className="homeProjects">
-                <h2>Check Out Some of My Projects:</h2>
+                <h2  onClick={() => {
+                        setCurrentPage("projectIndex")
+                        wipeProjectId()
+                    }}>Check Out Some of My Projects:</h2>
                 <div className="sectionWrap">
-                    <section>
-                        <ProjectIndex />                    
+                    <section className="homeProjectsSection">
+                        <ProjectIndex  setCurrentPage={setCurrentPage} setProjectId={setProjectId}/>                    
                     </section>                    
                 </div>
             </div>            

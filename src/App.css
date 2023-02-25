@@ -14,9 +14,9 @@ body {
     padding: 0;
 }
 
-.navbar {
+/* .navbar {
     --bs-navbar-active-color: #291512;
-}
+} */
 
 .brand {
     font-size: 3vw;
@@ -34,6 +34,7 @@ body {
 .navLink {
     color: #fefae0;
     font-size: 2vw;
+    transition: color .15s ease-in-out;
 }
 
 .resumeIcon {
@@ -49,6 +50,10 @@ body {
 
 .navLink:hover .resumeIcon{
     fill: #291512;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #291512;
 }
 
 .linkedIn {
@@ -77,18 +82,18 @@ body {
 
 .navbar-toggler {
     border: none;
-    height: 3vw;
-    width: 3vw;
-    min-height: 32px;
-    min-width: 35px;
+    height: 8vw;
+    width: 8vw;
+    max-height: 35px;
+    max-width: 35px;
     padding: 0;
 }
 
 .navbar-toggler-icon {
-    height: 2vw;
-    width: 2vw;
-    min-height: 30px;
-    min-width: 30px;
+    height: 8vw;
+    width: 8vw;
+    max-height: 35px;
+    max-width: 35px;
     background-image: url(./images/burgerMenu.png);
 }
 
@@ -165,6 +170,7 @@ header h3 {
     flex-grow: 1;
     position: relative;
     transition: color .15s ease-in-out, text-shadow .15s ease-in-out;
+    cursor: pointer;
 }
 
 .indexProject img {
@@ -178,13 +184,21 @@ header h3 {
     text-shadow: 3px 3px 2px #606c38;
 }
 
-.indexProject h1 {
+.projectTitles {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 7vw;
     text-align: center;
+    width: 80%;    
+}
+
+.projectTitles h1 {
+    font-size: 7vw;
+}
+
+.projectTitles h3 {
+    font-size: 2.8vw;
 }
 
 .cover {
@@ -221,6 +235,23 @@ header h3 {
 
 .homeAbout h2 {
     font-size: 3vw;
+    color: #291512;
+    cursor: pointer;
+}
+
+.homeAbout h2, .homeProjects h2 {
+    transition: all .15s ease-in-out;
+    width: max-content;
+    margin: auto;    
+}
+
+.homeAbout h2:hover, .homeProjects h2:hover {
+    color:rgba(41, 21, 18, .6);
+    text-shadow: none;
+}
+
+.homeAbout a, .homeProjects a {
+    text-decoration: none;
 }
 
 .homeProjects {
@@ -229,9 +260,12 @@ header h3 {
     padding: 2vw;
 }
 
-.homeProjects h2 {    
+.homeProjects h2 {
+    color: #fefae0;
     text-shadow: 1px 1px #291512;
+    /* transition: text-shadow .15s ease-in-out; */
     font-size: 3.5vw;
+    cursor: pointer;
 }
 
 .sectionWrap {
@@ -241,7 +275,7 @@ header h3 {
     padding: .25vw;
 }
 
-.homeProjects section {
+.homeProjectsSection {
     height: 35vw;
     overflow-y: auto;
     background-color: #2b1f13;
@@ -543,6 +577,9 @@ footer {
     .indexProject h1 {
         font-size: 10vw;
     }
+    .indexProject h3 {
+        font-size: 4.5vw;
+    }
     .cover {
         width: calc(100% - 16px);
         height: calc(100% - 10px);
@@ -573,7 +610,7 @@ footer {
     .sectionWrap {
         height: 55.5vw;
     }
-    .homeProjects section {
+    .homeProjectsSection {
         height: 55vw;
     }
     .professional, .professional p, .musical, .musical p, .weird, .weird p, .baking, .baking p {
@@ -625,7 +662,7 @@ footer {
 
 @media (max-width: 700px) {
     .brand {
-        font-size: 7vw;
+        font-size: 8vw;
     }
     .navLink {
         font-size: 4vw;
