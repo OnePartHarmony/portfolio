@@ -27,8 +27,7 @@ const currentProjects = [
             "The help button finds a set for the player.  The player can lose the game by asking for help more times than they found sets alone.",
             "I created simple animations for wins and losses using an html canvas and randomly generated colours.",
             "Automatic redraws and clickability are delayed with timeouts to create a smooth user experience where one has time to see what cards made a set.",
-            "I built this app in my third week of learning to code, using only vanilla JavaScript, HTML, and CSS.",
-            "Note: This game is not yet optimized for smaller screens - coming soon."
+            "I built this app in my third week of learning to code, using only vanilla JavaScript, HTML, and CSS."
         ],
         videos: [win, midGame, lose]
     },
