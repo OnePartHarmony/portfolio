@@ -11,7 +11,7 @@ const Header = ({clown}) => {
                 {clownImg}
                 <section>
                     <h1>Harmony Brown</h1>
-                    <h2>Woburn, MA</h2>
+                    <h2>Greater Boston</h2>
                     <h3>Software Engineer<br/>Full-Stack Developer</h3>
                 </section>
                 <img src={myFace} alt="Harmony's Face" className="myFace" />
